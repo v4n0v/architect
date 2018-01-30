@@ -1,4 +1,4 @@
-package ru.geekbrains.pattern.lesson3.factory;
+package lesson3.factory;
 
 public interface ExchangeFactory {
     PriceProvider createPriceProvider();

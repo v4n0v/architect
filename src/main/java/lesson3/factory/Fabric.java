@@ -1,4 +1,4 @@
-package ru.geekbrains.pattern.lesson3.factory;
+package lesson3.factory;
 
 import java.util.Set;
 
@@ -9,12 +9,12 @@ public class Fabric {
 
     // создать объект, реализующий известный интерфейс на основе внешней информации
     public ExchangeFactory createFactory(String name) throws Exception {
-        switch (name) {
-            case SUPPLIER_ONE:
-                return new CitilinkExchangeFactory();
-            case SUPPLIER_TWO:
-                return null;
-        }
+//        switch (name) {
+//            case SUPPLIER_ONE:
+//                return new CitilinkExchangeFactory();
+//            case SUPPLIER_TWO:
+//                return null;
+//        }
         return null;
     }
 

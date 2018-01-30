@@ -1,4 +1,4 @@
-package ru.geekbrains.pattern.lesson3.factory;
+package lesson3.factory;
 
 public class Main {
     public Money getSupplierPrice(String supplierName, String article) throws Exception {
