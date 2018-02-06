@@ -3,17 +3,11 @@
 import hw3.car_builer.simple.Car;
 import hw3.car_builer.simple.CarBodyType;
 import hw3.car_builer.simple.CarBuilder;
-import hw3.car_window_factory.order_interface.Cashier;
-import hw3.car_window_factory.order_interface.ClientCar;
-import hw3.car_window_factory.order_interface.Employer;
-import hw3.car_window_factory.order_interface.OrderFactory;
-import hw3.car_window_factory.order_personal.GlassOrderFactory;
 import hw3.car_window_factory.order_personal.OrderCashier;
 import hw3.car_window_factory.order_personal.OrderEmployer;
-import hw3.service_type_fabric_method.Service;
-import hw3.service_type_fabric_method.ServiceFabric;
-import hw3.service_type_fabric_method.ServiceMaker;
+import hw4.order.OrderComposite;
 import hw3.service_type_fabric_method.ServiceType;
+import hw4.CarExecute;
 import hw4.OrderFacade;
 
 public class Main {
@@ -30,6 +24,12 @@ public class Main {
                 .build();
         System.out.println(car);
 
+        CarExecute orderCar = new CarExecute(car, 2010);
+        OrderComposite orderExecutor = new OrderComposite(ServiceType.REPLACE);
+        orderExecutor.addComponent(new OrderCashier());
+        orderExecutor.addComponent(orderCar);
+        orderExecutor.addComponent(new OrderEmployer());
+        orderExecutor.execute();
 
 
         OrderFacade order = new OrderFacade();

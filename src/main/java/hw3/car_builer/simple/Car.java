@@ -1,14 +1,32 @@
 package hw3.car_builer.simple;
 
+import hw4.Execute;
+
 import java.util.ArrayList;
 
-public class  Car {
-    int article;
-    String mark;
-    String model;
-    ArrayList<Generation> generations = new ArrayList<Generation>();
-    int year;
-    CarBodyType bodyType;
+public class  Car implements Execute{
+   protected int article;
+    protected String mark;
+    protected  String model;
+    protected  ArrayList<Generation> generations = new ArrayList<Generation>();
+    protected  int year;
+    protected  CarBodyType bodyType;
+
+    public int getArticle() {
+        return article;
+    }
+
+    public String getMark() {
+        return mark;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public CarBodyType getBodyType() {
+        return bodyType;
+    }
 
     public void setBodyType(CarBodyType bodyType) {
         this.bodyType = bodyType;
@@ -42,15 +60,21 @@ public class  Car {
     }
 
     public Generation getGeneration(int id){
-
         return generations.get(id);
     }
-
+    public ArrayList<Generation> getGenerations(){
+        return generations;
+    }
     private String printGenerations() {
         String gen = "";
         for (int i = 0; i < generations.size(); i++) {
             gen += "Generation " + (i + 1) + "(" + generations.get(i).getFromYear() + "-" + generations.get(i).getToYear() + ")\n";
         }
         return gen;
+    }
+
+    @Override
+    public void execute() {
+        System.out.printf(this + " выполнняется");
     }
 }

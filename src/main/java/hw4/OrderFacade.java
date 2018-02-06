@@ -24,7 +24,8 @@ public class OrderFacade {
         Service service = serviceMaker.createService();
 
         // выполняем заказ
-        System.out.println("<<<<Новый заказ на замену стекла>>>>");
+
+        System.out.println("\n<<<<Новый заказ на замену стекла>>>>");
 
         cashier.createsOrder();
         clientCar.enteredBox();

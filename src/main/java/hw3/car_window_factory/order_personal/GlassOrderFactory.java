@@ -1,5 +1,6 @@
 package hw3.car_window_factory.order_personal;
 
+import hw3.car_builer.simple.Car;
 import hw3.car_window_factory.order_interface.ClientCar;
 import hw3.car_window_factory.order_interface.Cashier;
 import hw3.car_window_factory.order_interface.Employer;
