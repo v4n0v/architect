@@ -9,6 +9,8 @@ import hw4.order.OrderComposite;
 import hw3.service_type_fabric_method.ServiceType;
 import hw4.CarExecute;
 import hw4.OrderFacade;
+import hw5.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -34,5 +36,33 @@ public class Main {
 
         OrderFacade order = new OrderFacade();
         order.execute();
+
+/// HomeWork 5 см класс hw5/ManagerCommand
+//        OrderOperation orderOperation = new OrderOperation();
+//        User manager = new ManagerUser(orderOperation);
+//        User admin = new AdministratorUser(orderOperation);
+//        User employer = new EmployerUser(orderOperation);
+//
+//        manager.init(1111, "Ольга Ольгина");
+//        admin.init(2222, "Наталья Натальина");
+//        employer.init(10101, "Петр Петров");
+//
+//        manager.createOrder(1102321);
+//        System.out.println();
+//
+//        manager.editOrder(1102321);
+//        System.out.println();
+//
+//        admin.editOrder(1102321);
+//        System.out.println();
+//
+//        manager.showOrder(1102321);
+//        System.out.println();
+//
+//        employer.deleteOrder(1102321);
+//        System.out.println();
+//
+//        admin.deleteOrder(1102321);
+//        System.out.println();
     }
 }
