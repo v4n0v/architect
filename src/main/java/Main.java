@@ -1,15 +1,15 @@
 
 
-import hw3.car_builer.simple.Car;
-import hw3.car_builer.simple.CarBodyType;
-import hw3.car_builer.simple.CarBuilder;
-import hw3.car_window_factory.order_personal.OrderCashier;
-import hw3.car_window_factory.order_personal.OrderEmployer;
-import hw4.order.OrderComposite;
-import hw3.service_type_fabric_method.ServiceType;
-import hw4.CarExecute;
-import hw4.OrderFacade;
-import hw5.*;
+import homework.hw3.car_builer.simple.Car;
+import homework.hw3.car_builer.simple.CarBodyType;
+import homework.hw3.car_builer.simple.CarBuilder;
+import homework.hw3.car_window_factory.order_personal.OrderCashier;
+import homework.hw3.car_window_factory.order_personal.OrderEmployer;
+import homework.hw4.order.OrderComposite;
+import homework.hw3.service_type_fabric_method.ServiceType;
+import homework.hw4.CarExecute;
+import homework.hw4.OrderFacade;
+import homework.hw5.*;
 
 
 public class Main {
@@ -37,7 +37,7 @@ public class Main {
         OrderFacade order = new OrderFacade();
         order.execute();
 
-/// HomeWork 5 см класс hw5/ManagerCommand
+/// HomeWork 5 см класс homework.hw5/ManagerCommand
 //        OrderOperation orderOperation = new OrderOperation();
 //        User manager = new ManagerUser(orderOperation);
 //        User admin = new AdministratorUser(orderOperation);
